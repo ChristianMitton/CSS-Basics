@@ -1,0 +1,103 @@
+/* Type Selectors ------------------ */
+
+body {
+  color: #878787;
+  margin: 0;
+  //font-size: 1em; /* 16px */
+  //font stack: (font's to be used incase one isn't available, seperated by commas. first font is the 1st to have it's availability checked, then Arial, etc)
+  //fonts family names with more than one word will have to be in quotation marks
+  //font-family: "Helvetica Neue" ,Helvetica, Arial, sans-serif;
+  //line-height: 1.5; //Best practive to define line-heights using unitless numbers
+
+  //font-weight, font-size, line-height, font-family all at once:
+  font: normal, 1em/1.5 "Helvetica Neue" ,Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 5.625rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1); /* Alpha value of "1" makes element fully opaque */
+  text-transform: uppercase;
+  font-weight: normal; //100 = thinist, 900 = thiccest, 400-500 = normal
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+}
+
+p {
+
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* ID Selectors -------------------- */
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px #ffa949;
+}
+
+/* Class Selectors ----------------- */
+
+.main-header {
+  background-color: #ffa949;
+}
+
+.title {
+  color: white;
+  font-size: 1.625rem; /* 26px/16px */
+}
+
+.primary-content,
+.secondary-content {
+  width: 60%;
+}
+
+.primary-content,
+.main-header {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey; /* Top border styles */
+}
+
+/*
+text-align
+  Let's us control the horizontal alignment of text.
+
+text-transform
+  Changes the case of text – whether it's uppercase, lowercase, or capitalized.
+
+text-decoration
+  Sets the line decoration of elements. We'll commonly use this property to remove underlines in links.
+
+font-weight
+  Sets how thick or thin the characters are displayed.
+*/

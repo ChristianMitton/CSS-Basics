@@ -1,0 +1,93 @@
+/* Type Selectors ------------------ */
+
+body {
+  color: #878787;
+  margin: 0;
+  font-size: 1em; //16 px (default font size) = 1em (for body, the highest parent)
+}
+
+h1 {
+  font-size: 5.625rem; //90px/ 16px = 5.625em
+  color: rgba(255,255,255, .5);
+}
+
+h2 {
+  font-size: 53px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #48525c;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255,169,73);
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  //rgba includes alpha
+  //great for link hover
+  color: rgba(255,169,73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* ID Selectors -------------------- */
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px #ffa949;
+}
+
+/* Class Selectors ----------------- */
+
+.main-header {
+  background-color: #ffa949;
+  //width: 100%;
+  //margin-left: 10%;
+}
+
+.title {
+  color: white;
+  font-size: 1.625rem; // 26px/ 16px = 1.625em
+}
+
+//select multiple classes at once
+.primary-content,
+secondary-content {
+  width: 60%;
+}
+
+.primary-content {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey; /* Top border styles */
+}
+
+//px are fixed, they don't change regardless of screen size
+//percentage values are measured relative to a parent elements length
+//em is a font relative unit calculated based on a parent elements font-size
+  //1em is equal to the font-size value of the parent element
+  //em's are useful for creating scalable content. Child elements are able to resize proportionally based on a
+  //parent elements font size, WITHOUT HAVING TO MANUALLY CALCULATE AND REDEFINE ALL THE SIZES FOR CHILD ELEMENTS, LIKE
+  //YOUD HAVE TO DO WITH PIXELS
+
+//rem = root em
+  //similar to em unit, only the difference is that it's relative to the root element of the page (<html>), not any parent
+  //element (unlike rem, they're more predictable)
+
+//FOR RESIZEING TEXT, IT'S DEFINITLY RECOMMENDED TO USE EM OVER PIXELS
+
+
+//Formula: <value you want to em to be quivalent to> / 16px

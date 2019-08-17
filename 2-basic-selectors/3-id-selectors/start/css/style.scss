@@ -1,0 +1,123 @@
+
+body {
+  color: #878787;
+  margin: 0;
+}
+
+.main-header {
+  background-color: orange;
+}
+
+//decendent selector (for scss it'd just be nested selectors)
+
+//.main-header span {
+//header span {
+.title {
+  color: white;
+  font-size: 26px;
+}
+
+ol li {
+  background-color: tomato;
+  color: white;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 90px;
+  color: white;
+}
+
+h2 {
+  font-size: 53px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #48525c;
+}
+
+//selecting element by id
+.primary-content {
+  text-align: center; //center align all text
+}
+
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px orange;
+}
+
+.t-border {
+  border-top: 2px solid lightgray; //applies a border
+}
+
+// Sudo classes
+//note this link sudo class will only select anchor elements that have an href attribute
+a:link {
+  color: orange;
+}
+
+//style the links that have been visited
+a:visited {
+  color: lightblue;
+}
+
+//style the link when a user hovers over a link
+a:hover {
+  color: forestgreen;
+}
+
+/*
+  p:hover {
+    color: forestgreen;
+  }
+*/
+
+//applied when an element is getting activated by the user
+//this style will be applied between the time you press the link and the time your release it
+a:active {
+  color: lightcoral;
+}
+
+//focus class is only applied to interactive elements like links, forms, and buttons, and the styles are applied as soon
+//as the element recieves 'focus'. Focus on an element happens when a browser discovers that the user is ready to interact
+//with it. FOR EX, YOU CAN ADD FOCUS TO LINKS FOR USERS NAVIGATING A SITE USING A KEYBOARD INSTEAD OF A MOUSE
+a:focus{
+  color: white;
+  background-color: orange;
+}
+
+//now if you hit the tab key on the site, once a link obtains focus it takes on the styles defined in the focus sudo class
+
+//Adding focus styles to all interactive elements on the page
+/*
+:focus {
+  color: white;
+  background-color: orange;
+}
+*/
+
+
+
+
+
+
+//note: if in href you type '#<id name>' it will take you back to the top of the page. The idea is to use ID's as 'anchors' in your pages. for ex href="#top" would take you to the element with the id "top",
+// useful for transitioning up page
+
+// ID's are used to select one element on a page, a class is used to select multiple
+
+// An element can have an id and a class though
+
+// To add multiple classes do class="class1 class2"
+
+// psudeo classes-----------
+// <selector/class/id>:<psudeo class>
+// can dynamically target elements based on user interaction, an elements state etc
+// think of it as a keyword added to a selector to style a special state of and element
+
+//ex: link history psudeo classes allow us to style links based on whether or not they've been visited or clicked on
+
+//Hover can be applied to any element
